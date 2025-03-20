@@ -7,6 +7,7 @@ public class buvlesorting {
         int[] numbers = {2,6,4,9,1,};
         System.out.println(Arrays.toString(buble(numbers)));
         System.out.println(binary(buble(numbers),9));
+        System.out.println(binrary2(buble(numbers),88));
 
     }
         public static int[] buble(int[] array){
@@ -37,5 +38,39 @@ public class buvlesorting {
                 }
             }
             return false;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public static boolean binrary2(int[] x, int findMe){
+            int l = 0;
+            int r = x.length -1;
+
+            while(l<=r){
+                int m = l + (r-l)/2;
+                if(x[m] == findMe){
+                    return true;
+                } else if( x[m] > findMe){
+                    r = m -1;
+                } else if (x[m] < findMe) {
+                    l = m + 1;
+
+                }
+            }
+                return false;
         }
 }
