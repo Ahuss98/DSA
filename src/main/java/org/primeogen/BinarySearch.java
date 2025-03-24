@@ -19,10 +19,10 @@ public class BinarySearch {
             int m = l + (r -l)/2;
             if(heystack[m] == needle){
                 return true;
-            } else if (heystack[m] > needle) {
-                r = m -1;
             } else if (heystack[m] < needle) {
                 l = m + 1;
+            } else if (heystack[m] > needle) {
+                r = m -1;
 
             }
         }
