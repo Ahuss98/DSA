@@ -12,7 +12,7 @@ public class BubleSort {
 
     public static int[] boobley(int[] unsortedArr){
         for(int i = 0 ; i < unsortedArr.length; i++){
-            for(int j = 0; j < unsortedArr.length -1; j++){
+            for(int j = 0; j < unsortedArr.length -1 - i; j++){
                 if(unsortedArr[j] > unsortedArr[j+1]){
                     int temp = unsortedArr[j];
                     unsortedArr[j] = unsortedArr[j+1];
